@@ -1,0 +1,44 @@
+{% extends "../inc/layout.html" %}
+
+{% block head %}
+    {% include "../inc/head.html" %}
+    <link href="{{STATIC_DOMAIN}}/css/admin/login.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="stage">
+    <div class="login-panel">
+        <p class="top">
+            <h1>登录</h1>
+        </p>
+        <div class="input-con">
+            <form>
+                <input type="text" id="uName" placeholder="输入用户名">
+                <input type="password" id="password" placeholder="输入密码">
+            </form>
+            <div class="button-bar clearfix">
+                <span class="btn-login">登录</span>
+            </div>
+            <div class="bottom">
+                <div class="clearfix">
+                    <span class="btn-reg">注册</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    var jsPath = '{{STATIC_DOMAIN}}/js/admin/login/login.js';
+    seajs.use(jsPath,function(L){
+        L.init();
+    });
+
+</script>
+
+{% endblock %}

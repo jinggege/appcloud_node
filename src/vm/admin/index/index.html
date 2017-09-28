@@ -1,0 +1,90 @@
+ {% extends "../inc/layout.html" %} 
+ {% block head%} 
+    {% include "../inc/head.html" %} 
+ {% endblock %} 
+ 
+ {% block content %}
+<div class="M-top clearfix">
+    {% include "../menu/menu_1.html" %}
+</div>
+<div class="M-stage">
+
+  <div class="M-menu-left">
+
+  </div>
+
+  <div class="M-content">
+    <div class="introduce">
+
+      <div class="panel-con clearfix">
+        <!-- -->
+        <div class="child-panel">
+          <div class="img-con">
+            <i class="layui-icon">&#xe6c6;</i>
+          </div>
+          <h1>平台化管理</h1>
+          <h2>XXXX</h2>
+          <div class="desc">
+            最便捷的应用工作流，满足您的多端建站需求最便捷的应用工作流，满足您的多端建站需求
+          </div>
+          <a class="link">
+            <p>查看详情</p>
+          </a>
+        </div>
+        <!-- -->
+        <div class="child-panel">
+          <div class="img-con">
+            <img>
+          </div>
+          <h1>深度定制</h1>
+          <h2>XXXX</h2>
+          <div class="desc">
+            最便捷的应用工作流，满足您的多端建站需求最便捷的应用工作流，满足您的多端建站需求
+          </div>
+          <a class="link">
+            <p>查看详情</p>
+          </a>
+        </div>
+
+        <!-- -->
+        <div class="child-panel">
+          <div class="img-con">
+            <img>
+          </div>
+          <h1>生成APP</h1>
+          <h2>XXXX</h2>
+          <div class="desc">
+            最便捷的应用工作流，满足您的多端建站需求最便捷的应用工作流，满足您的多端建站需求
+          </div>
+          <a class="link">
+            <p>查看详情</p>
+          </a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+<script src="http://127.0.0.1:3001/js/libs/layui.all.js" charset="utf-8"></script>
+<script>
+
+  seajs.use("LAY",function(L){
+    L.resize();
+
+  });
+  layui.use('element', function(){
+    var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+  });
+</script>
+
+
+
+
+
+{% endblock %}
