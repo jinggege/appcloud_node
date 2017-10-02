@@ -14,6 +14,81 @@
  </div>
 
  <div class="M-content">
+   <div class="main-panel">
+        <!-- title -->
+        <div class="apply-title">
+            <fieldset>
+              <legend>
+                <a name="use">申请APP</a>
+              </legend>
+            </fieldset>
+        </div>
+
+        <!-- form -->
+        <div class="M-form apply-form ">
+            <form class="layui-form">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">APP名称:</label>
+                    <div class="layui-input-block">
+                      <input name="title" required="" lay-verify="required" placeholder="请输入APP名称" autocomplete="off" class="layui-input" type="text">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">验证码:</label>
+                    <div class="layui-input-inline">
+                      <input name="title" required="" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input" type="text">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">短信验证码</div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">APP用途:</label>
+                    <div class="layui-input-block">
+                       <input name="like[write]" title="信息展示" type="checkbox">
+                       <div class="layui-unselect layui-form-checkbox M-form-color" lay-skin=""><span>信息展示</span><i class="layui-icon"></i></div>
+
+                       <input name="like[read]" title="数据管理" checked="" type="checkbox">
+                       <div class="layui-unselect  layui-form-checkbox layui-form-checked" lay-skin="layui-bg-cyan"><span>数据管理</span><i class="layui-icon"></i></div>
+
+                       <input name="like[dai]" title="渠道推广" type="checkbox">
+                       <div class="layui-unselect layui-form-checkbox" lay-skin=""><span>渠道推广</span><i class="layui-icon"></i></div>
+
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">应用端:</label>
+                    <div class="layui-input-block">
+                       <input name="like[write]" title="WebAPP" type="checkbox" lay-skin="primary" > 
+                       <input name="like[read]" title="PC端" checked="" type="checkbox" lay-skin="primary" >
+                       <input name="like[dai]" title="APP-IOS" type="checkbox" lay-skin="primary" > 
+                       <input name="like[dai]" title="APP-Android" type="checkbox" lay-skin="primary" > 
+                    </div>
+                </div>
+
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">APP描述:</label>
+                <div class="layui-input-block">
+                  <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+                </div>
+              </div>
+
+
+              <div class="layui-form-item">
+                <div class="layui-input-block">
+                  <button class="layui-btn" lay-submit="" lay-filter="btn-apply">提交申请</button>
+                  <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+
+
+   </div>
 
 
 
