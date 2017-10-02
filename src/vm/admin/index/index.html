@@ -5,7 +5,7 @@
  
  {% block content %}
 <div class="M-top clearfix">
-    {% include "../menu/menu_1.html" %}
+    {% include "../menu/menu_top.html" %}
 </div>
 <div class="M-stage">
 
@@ -74,9 +74,9 @@
 <script src="{{STATIC_DOMAIN}}/js/libs/layui.all.js" charset="utf-8"></script>
 <script>
 
-  seajs.use("LAY",function(L){
-    L.resize();
-
+  var jsPath = "{{STATIC_DOMAIN}}/js/admin/index/index.js";
+  seajs.use(jsPath,function(LN){
+     LN.init();
   });
   layui.use('element', function(){
     var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块

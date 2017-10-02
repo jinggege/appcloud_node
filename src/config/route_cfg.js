@@ -19,6 +19,13 @@ module.exports = [
         controllerPath:"/controllers/apply/apply.js",
         methods:["GET","POST"],
         desc:'apply app'
+    },
+    {
+        name:"apps",
+        router:"/app",
+        controllerPath:"/controllers/app/app_index.js",
+        methods:["GET","POST"],
+        desc:'app index'
     }
 
  

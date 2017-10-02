@@ -1,0 +1,58 @@
+{% extends "../inc/layout.html" %} 
+{% block head%} 
+   {% include "../inc/head.html" %} 
+   <link href="{{STATIC_DOMAIN}}/css/admin/app_temp.css" rel="stylesheet">
+{% endblock %} 
+
+{% block content %}
+<div class="M-top clearfix">
+   {% include "../menu/menu_top.html" %}
+</div>
+<div class="M-stage">
+
+ <div class="M-menu-left">
+ </div>
+
+ <div class="M-content">
+    <div class="app-panel clearfix">
+        <div class="child-panel app-pre">
+            <div class="phone">
+                {% include "./temp1000.html" %}
+
+                {% include "./temp1001.html" %}
+
+            </div>
+        </div>
+
+        <div class="child-panel app-edit">
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+</div>
+
+<script src="{{STATIC_DOMAIN}}/js/libs/layui.all.js" charset="utf-8"></script>
+<script>
+    layui.use('element', function(){
+      var element = layui.element; 
+    });
+
+    var jsPath = "{{STATIC_DOMAIN}}/js/admin/apps/layout.js";
+    seajs.use(jsPath,function(AL){
+      AL.init();
+
+    });
+
+</script>
+
+
+
+
+
+{% endblock %}
