@@ -23,7 +23,7 @@ module.exports = [
     {
         name:"apps",
         router:"/app",
-        controllerPath:"/controllers/app/app_index.js",
+        controllerPath:"/controllers/app/app_factory.js",
         methods:["GET","POST"],
         desc:'app index'
     }

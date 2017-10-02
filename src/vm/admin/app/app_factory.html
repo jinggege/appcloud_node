@@ -17,9 +17,9 @@
     <div class="app-panel clearfix">
         <div class="child-panel app-pre">
             <div class="phone">
-                {% include "./temp1000.html" %}
+                {% include "./temp/temp1000.html" %}
 
-                {% include "./temp1001.html" %}
+                {% include "./temp/temp1001.html" %}
 
             </div>
         </div>
@@ -43,7 +43,7 @@
       var element = layui.element; 
     });
 
-    var jsPath = "{{STATIC_DOMAIN}}/js/admin/apps/layout.js";
+    var jsPath = "{{STATIC_DOMAIN}}/js/admin/app/layout.js";
     seajs.use(jsPath,function(AL){
       AL.init();
 
