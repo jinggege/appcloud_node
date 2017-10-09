@@ -7,7 +7,14 @@ module.exports = [
         desc:'登陆'
     },
     {
-        name:"index",
+        name:"admin",
+        router:"/",
+        controllerPath:"/controllers/index/index.js",
+        methods:["GET","POST"],
+        desc:'admin index'
+    },
+    {
+        name:"admin",
         router:"/admin",
         controllerPath:"/controllers/index/index.js",
         methods:["GET","POST"],
