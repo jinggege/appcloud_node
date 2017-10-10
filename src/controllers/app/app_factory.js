@@ -1,5 +1,6 @@
 
 var URL = require("url");
+
 var Render = require(global.CODE_PATH+"/config/render_cfg.js");
 
 /**

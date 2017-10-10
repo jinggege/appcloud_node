@@ -33,6 +33,13 @@ module.exports = [
         controllerPath:"/controllers/app/app_factory.js",
         methods:["GET","POST"],
         desc:'app index'
+    },
+    {
+        name:"temp",
+        router:"/temp/:tempId",
+        controllerPath:"/controllers/temp/temp.js",
+        methods:["GET","POST"],
+        desc:'get templete vm'
     }
 
  

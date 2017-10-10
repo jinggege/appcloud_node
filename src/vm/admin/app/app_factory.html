@@ -2,6 +2,15 @@
 {% block head%} 
    {% include "../inc/head.html" %} 
    <link href="{{STATIC_DOMAIN}}/css/admin/app_temp.css" rel="stylesheet">
+
+   <script type="text/javascript">
+        window.CFG = {
+            app_domian:{{ APP_DOMAIN }},
+            static_domain : {{ STATIC_DOMAIN }},
+            api_domain:{{ API_DOMAIN }}
+        }
+   </script>
+
 {% endblock %} 
 
 {% block content %}
