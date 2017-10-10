@@ -15,11 +15,13 @@ class Temp{
 
     async control(ctx){
 
-        var tempId = ctx.params.id;
+        var tempId = ctx.params.tempId;
 
         var vmName = "temp"+tempId;
 
         var tempHtml = await Render( "admin/app/temp/"+vmName );
+
+        var respData = FD.formatResData(0,tempHtml, "ok");
 
         ctx.body = FD.formatResData(0,tempHtml, "ok");
     }
