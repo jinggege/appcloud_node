@@ -26,9 +26,17 @@
     <div class="app-panel clearfix">
         <!--panel preview -->
         <div class="child-panel app-pre">
+            <div class="pre-toolbar">
+                <div class="tool-item tool-save layui-icon" tool-name="save-temp">
+                    &#xe608;
+                </div>
+            </div>
             <div class="phone">
 
+                <!--
                 {% include "./temp/temp1000.html" %}
+                -->
+
                 <!--
                 {% include "./temp/temp1001.html" %}
                 -->
@@ -56,38 +64,6 @@
                 <div class="area-title">
                     <fieldset><legend><a name="pane">编辑模板</a></legend></fieldset>
                 </div>
-
-                <div class="edit-panel">
-                   <form class="layui-form layui-form-pane"> 
-                        <div class="layui-form-item">
-                            <label class="layui-form-label">文字1</label>
-                            <div class="layui-input-block">
-                                <input name="title" id="temp1000-edit-input1" placeholder="输入内容，替换文字1" autocomplete="off" class="layui-input" type="text">
-                            </div>
-                        </div>
-
-                        <div class="layui-form-item">
-                            <label class="layui-form-label">文字2</label>
-                            <div class="layui-input-block">
-                                <input name="title" id="temp1000-edit-input2"  placeholder="输入内容，替换文字2" autocomplete="off" class="layui-input" type="text">
-                            </div>
-                        </div>
-
-                        <div class="layui-form-item layui-form-text">
-                            <label class="layui-form-label">文字3</label>
-                            <div class="layui-input-block">
-                                  <textarea  id="temp1000-edit-input3" placeholder="输入内容，替换文字3" class="layui-textarea"></textarea>
-                            </div>
-                        </div>
-                    </form>
-
-                    <div class="layui-form-item">
-                        <button class="layui-btn btn-temp1000-edit" >修改</button>
-                    </div>
-
-                </div>
-
-
             </div>
 
         </div>
