@@ -1,5 +1,12 @@
 module.exports = [
     {
+        name:"home/index",
+        router:"/home",
+        controllerPath:"/controllers/home/index.js",
+        methods:["GET","POST"],
+        desc:'首页'
+    },
+    {
         name:"login",
         router:"/login",
         controllerPath:"/controllers/login/login.js",
