@@ -47,6 +47,13 @@ module.exports = [
         controllerPath:"/controllers/temp/temp.js",
         methods:["GET","POST"],
         desc:'get templete vm'
+    },
+    {
+        name:"notebook",
+        router:"/nb/:action",
+        controllerPath:"/controllers/notebook/notebook.js",
+        methods:["GET","POST"],
+        desc:'notebook'
     }
 
  

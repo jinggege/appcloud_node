@@ -1,0 +1,46 @@
+{% extends "./inc/layout.html" %}
+
+{% block head %}
+
+    {% include "./inc/head.html" %}
+
+    <style type="text/css">
+        .M-content .title-con{float: left; margin: 10px; width:500px; height: 100%; border: 1px solid #dedede; border-radius: 5px;}
+        .M-content .title-set-con .edit-panel .in-item{display: inline-block; height: 40px; height: 40px;}
+        .M-content .title-set-con .edit-panel .in-title{padding: 0 0 0 10px; width: 300px; border: 1px solid #cccccc; color: #000000;}
+        .M-content .title-set-con .edit-panel .btn-sub{text-align: center;}
+
+    </style>
+
+{% endblock %}
+
+
+{% block content %}
+    <div class="M-content" >
+
+        <div class="title-con title-list-con">
+
+        </div>
+
+        <div class="title-con title-set-con">
+            <div class="edit-panel">
+                <input type="text" id="in-title" class="in-item in-title" >
+                <button class="in-item btn-sub">submit</button>
+
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    <script>
+        var jsPath = "{{STATIC_DOMAIN}}/js/notebook/edit_title.js";
+
+        seajs.use(jsPath,function(ED){
+            ED.init();
+        });
+
+    </script>
+
+{% endblock %}
